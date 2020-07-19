@@ -1,0 +1,21 @@
+<div>
+  <!-- string interpolation -->
+  <h1>Hello {{ username }}!</h1>
+</div>
+
+<!-- EVENT BINDING -->
+<button type="button" (click)="changeUsername('Foo bar')">Click me!</button>
+
+<!-- PROPERTY BINDING -->
+<!-- <img width="50px" height="50px" src="{{ image }}" /> -->
+<img width="50px" height="50px" [src]="image" />
+<!-- [attr.propertyName] -->
+
+<!-- Two way binding -->
+<input
+  type="text"
+  [(ngModel)]="chocolate"
+  placeholder="What is your favourite chocolate"
+/>
+
+<p>{{ chocolate }}</p>
